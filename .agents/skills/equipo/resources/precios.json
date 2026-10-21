@@ -1,0 +1,30 @@
+{
+  "_fuente": "https://ai.google.dev/gemini-api/docs/pricing — nivel pagado Standard, USD por 1 millón de tokens. Revisado 2026-10-21. Cada tramo rige desde su fecha 'desde'.",
+  "_nota": "modalidad 'facturacion' = Antigravity conectado a un proyecto de Google Cloud (Vertex AI, pago por consumo: se paga en dinero). 'cuota' = plan Google AI Pro/Ultra (se descuenta de la cuota; dinero solo con créditos de excedente).",
+  "modalidad": "facturacion",
+  "tiers": {
+    "pro": "gemini-4-argon",
+    "flash": "gemini-3.8-flash"
+  },
+  "tipos_agente": {
+    "constructor": "flash",
+    "jefe": "pro",
+    "supervisor": "inherit",
+    "orquestador": "inherit"
+  },
+  "modelo_principal": "gemini-3.8-flash",
+  "dolar_respaldo_clp": 979,
+  "modelos": {
+    "gemini-4-argon": [
+      { "desde": "2000-01-01", "entrada": 2.00, "cache": 0.10, "salida": 10.00 },
+      { "desde": "2026-12-01", "entrada": 4.00, "cache": 0.20, "salida": 20.00 }
+    ],
+    "gemini-3.8-flash": [
+      { "desde": "2000-01-01", "entrada": 0.75, "cache": 0.075, "salida": 3.75 },
+      { "desde": "2027-01-01", "entrada": 1.50, "cache": 0.15, "salida": 7.50 }
+    ],
+    "gemini-3.1-pro": [
+      { "desde": "2000-01-01", "entrada": 2.00, "cache": 0.20, "salida": 12.00 }
+    ]
+  }
+}
